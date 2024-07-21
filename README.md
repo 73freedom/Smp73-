@@ -1,5 +1,336 @@
 # .NET Samples
-
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "smp73mouse@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:642:4c04:6e1f:46a:3fc5:2493:a4bd",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.firewalls.delete",
+      "resourceName": "projects/smp73se/global/firewalls/default-allow-health-check",
+      "request": {
+        "@type": "type.googleapis.com/compute.firewalls.delete"
+      },
+      "resourceOriginalState": {
+        "@type": "compute.googleapis.com/delete.state",
+        "alloweds": [
+          {
+            "IPProtocol": "tcp"
+          }
+        ],
+        "creationTimestamp": "2024-07-02T00:35:36.352-07:00",
+        "description": "",
+        "direction": "INGRESS",
+        "disabled": false,
+        "enableLogging": false,
+        "id": "1468974557438022439",
+        "logConfig": {
+          "enable": false
+        },
+        "name": "default-allow-health-check",
+        "network": "https://www.googleapis.com/compute/v1/projects/smp73se/global/networks/default",
+        "priority": "1000",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/smp73se/global/firewalls/default-allow-health-check",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/smp73se/global/firewalls/1468974557438022439",
+        "sourceRanges": [
+          "35.191.0.0/16",
+          "130.211.0.0/22",
+          "209.85.152.0/22",
+          "209.85.204.0/22"
+        ],
+        "targetTags": [
+          "lb-health-check"
+        ]
+      }
+    },
+    "insertId": "-zhyq58cj4k",
+    "resource": {
+      "type": "gce_firewall_rule",
+      "labels": {
+        "project_id": "smp73se",
+        "firewall_rule_id": "1468974557438022439"
+      }
+    },
+    "timestamp": "2024-07-09T22:27:17.809949Z",
+    "severity": "NOTICE",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "b3c39864-f540-4e28-86bb-33e7533b50ed"
+    },
+    "logName": "projects/smp73se/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1720564031054-61cd807e261be-a5ecde3b-8fcbfa1a",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-07-09T22:27:18.715245514Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "smp73mouse@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2601:642:4c04:6e1f:46a:3fc5:2493:a4bd",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-07-09T22:27:11.556863Z",
+          "reason": "8uSywAYQGg5Db2xpc2V1bSBGbG93cw",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.firewalls.delete",
+      "authorizationInfo": [
+        {
+          "resource": "projects/smp73se/global/firewalls/default-allow-health-check",
+          "permission": "compute.firewalls.delete",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/smp73se/global/firewalls/default-allow-health-check",
+            "type": "compute.firewalls"
+          },
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/smp73se/global/networks/default",
+          "permission": "compute.networks.updatePolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/smp73se/global/networks/default",
+            "type": "compute.networks"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/smp73se/global/firewalls/default-allow-health-check",
+      "request": {
+        "@type": "type.googleapis.com/compute.firewalls.delete"
+      },
+      "response": {
+        "targetId": "1468974557438022439",
+        "startTime": "2024-07-09T15:27:11.400-07:00",
+        "@type": "type.googleapis.com/operation",
+        "id": "8824292208604612560",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/smp73se/global/firewalls/default-allow-health-check",
+        "progress": "0",
+        "status": "RUNNING",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/smp73se/global/operations/operation-1720564031054-61cd807e261be-a5ecde3b-8fcbfa1a",
+        "user": "smp73mouse@gmail.com",
+        "insertTime": "2024-07-09T15:27:11.393-07:00",
+        "name": "operation-1720564031054-61cd807e261be-a5ecde3b-8fcbfa1a",
+        "operationType": "delete",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/smp73se/global/operations/8824292208604612560"
+      },
+      "resourceOriginalState": {
+        "direction": "INGRESS",
+        "name": "default-allow-health-check",
+        "alloweds": [
+          {
+            "IPProtocol": "tcp"
+          }
+        ],
+        "description": "",
+        "sourceRanges": [
+          "35.191.0.0/16",
+          "130.211.0.0/22",
+          "209.85.152.0/22",
+          "209.85.204.0/22"
+        ],
+        "network": "https://www.googleapis.com/compute/v1/projects/smp73se/global/networks/default",
+        "creationTimestamp": "2024-07-02T00:35:36.352-07:00",
+        "@type": "compute.googleapis.com/delete.state",
+        "disabled": false,
+        "priority": "1000",
+        "enableLogging": false,
+        "targetTags": [
+          "lb-health-check"
+        ],
+        "logConfig": {
+          "enable": false
+        },
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/smp73se/global/firewalls/default-allow-health-check",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/smp73se/global/firewalls/1468974557438022439",
+        "id": "1468974557438022439"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "u94y4me12th0",
+    "resource": {
+      "type": "gce_firewall_rule",
+      "labels": {
+        "firewall_rule_id": "1468974557438022439",
+        "project_id": "smp73se"
+      }
+    },
+    "timestamp": "2024-07-09T22:27:11.129647Z",
+    "severity": "NOTICE",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "b3c39864-f540-4e28-86bb-33e7533b50ed"
+    },
+    "logName": "projects/smp73se/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1720564031054-61cd807e261be-a5ecde3b-8fcbfa1a",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-07-09T22:27:11.822428257Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "smp73mouse@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2607:fb90:dd5a:2f6:2cb0:b6ff:fe0b:f9d4",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.firewalls.insert",
+      "resourceName": "projects/smp73se/global/firewalls/default-allow-health-check",
+      "request": {
+        "@type": "type.googleapis.com/compute.firewalls.insert"
+      }
+    },
+    "insertId": "yelqd1croq",
+    "resource": {
+      "type": "gce_firewall_rule",
+      "labels": {
+        "project_id": "smp73se",
+        "firewall_rule_id": "1468974557438022439"
+      }
+    },
+    "timestamp": "2024-07-02T07:35:40.531346Z",
+    "severity": "NOTICE",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "cf5d1cc0-3c50-436e-a937-57e4a17d6041"
+    },
+    "logName": "projects/smp73se/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1719905735769-61c3ec26d7e9d-a003efbf-7417e979",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-07-02T07:35:40.671737307Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "smp73mouse@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2607:fb90:dd5a:2f6:2cb0:b6ff:fe0b:f9d4",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-07-02T07:35:36.761999Z",
+          "reason": "8uSywAYQGg5Db2xpc2V1bSBGbG93cw",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.firewalls.insert",
+      "authorizationInfo": [
+        {
+          "resource": "projects/smp73se/global/firewalls/default-allow-health-check",
+          "permission": "compute.firewalls.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/smp73se/global/firewalls/default-allow-health-check",
+            "type": "compute.firewalls"
+          },
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/smp73se/global/networks/default",
+          "permission": "compute.networks.updatePolicy",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/smp73se/global/networks/default",
+            "type": "compute.networks"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/smp73se/global/firewalls/default-allow-health-check",
+      "request": {
+        "sourceRanges": [
+          "35.191.0.0/16",
+          "130.211.0.0/22",
+          "209.85.152.0/22",
+          "209.85.204.0/22"
+        ],
+        "@type": "type.googleapis.com/compute.firewalls.insert",
+        "alloweds": [
+          {
+            "IPProtocol": "tcp"
+          }
+        ],
+        "targetTags": [
+          "lb-health-check"
+        ],
+        "network": "projects/smp73se/global/networks/default",
+        "name": "default-allow-health-check"
+      },
+      "response": {
+        "id": "6136235180637950759",
+        "@type": "type.googleapis.com/operation",
+        "status": "RUNNING",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/smp73se/global/operations/operation-1719905735769-61c3ec26d7e9d-a003efbf-7417e979",
+        "startTime": "2024-07-02T00:35:36.599-07:00",
+        "user": "smp73mouse@gmail.com",
+        "insertTime": "2024-07-02T00:35:36.582-07:00",
+        "name": "operation-1719905735769-61c3ec26d7e9d-a003efbf-7417e979",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/smp73se/global/firewalls/default-allow-health-check",
+        "operationType": "insert",
+        "progress": "0",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/smp73se/global/operations/6136235180637950759",
+        "targetId": "1468974557438022439"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "r6ynyldlgem",
+    "resource": {
+      "type": "gce_firewall_rule",
+      "labels": {
+        "project_id": "smp73se",
+        "firewall_rule_id": "1468974557438022439"
+      }
+    },
+    "timestamp": "2024-07-02T07:35:35.827775Z",
+    "severity": "NOTICE",
+    "labels": {
+      "compute.googleapis.com/root_trigger_id": "cf5d1cc0-3c50-436e-a937-57e4a17d6041"
+    },
+    "logName": "projects/smp73se/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1719905735769-61c3ec26d7e9d-a003efbf-7417e979",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-07-02T07:35:37.441512379Z"
+  }
+]
 ![Markdownlint](https://github.com/dotnet/samples/workflows/Markdownlint/badge.svg) [![Snippets 5000](https://github.com/dotnet/samples/actions/workflows/build-validation.yml/badge.svg)](https://github.com/dotnet/samples/actions/workflows/build-validation.yml) [![target supported version](https://github.com/dotnet/samples/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/samples/actions/workflows/version-sweep.yml)
 
 This repo contains all the sample code that is part of any topic under
